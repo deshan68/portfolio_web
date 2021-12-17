@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;1,100;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+.landing {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+nav {
+  position: absolute;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  margin: auto;
+  width: 100%;
+  padding: 25px;
+}
+h1,
+ul {
+  flex: 1;
+  color: white;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+span {
+  color: rgb(255, 175, 0);
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.desc {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  color: white;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  line-height: 60px;
+}
+.line1 {
+  font-size: 2rem;
+}
+.line2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.line3 {
+  font-size: 2.5rem;
+}
+.btn {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 174, 0, 0.658);
+  font-weight: bold;
+}
+a {
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(255, 175, 0);
+}
+.typing::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 1px;
+  background-color: rgba(255, 174, 0, 0.658);
+  animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.typing {
+  position: relative;
+  font-weight: bold;
+  font-style: italic;
+}
