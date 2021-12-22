@@ -20,3 +20,30 @@ let letter = '';
     setTimeout(type, 400);
 
 }());
+
+
+// nav bar animation
+function scrollAppear(){
+    var navBar = document.querySelector('.nav-bar-curr');
+    var logo = document.querySelector('.logo-curr');
+
+    var about = document.querySelector('.about');
+    var aboutPosition = about.getBoundingClientRect().top;
+
+    var screenPosition = window.innerHeight / 1.3 ;
+    console.log(screenPosition);
+    console.log(aboutPosition);
+
+
+    if(aboutPosition < screenPosition){
+        navBar.classList.add('nav-bar-change');
+        logo.classList.add('logo-change');
+
+    }else{
+        navBar.classList.remove('nav-bar-change');
+        logo.classList.remove('logo-change');
+
+
+    }
+}
+window.addEventListener('scroll',scrollAppear);
