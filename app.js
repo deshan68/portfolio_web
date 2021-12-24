@@ -22,28 +22,66 @@ let letter = '';
 }());
 
 
-// nav bar animation
+// nav bar appear animation
+//content appear animatio
+
+
 function scrollAppear(){
     var navBar = document.querySelector('.nav-bar-curr');
     var logo = document.querySelector('.logo-curr');
 
-    var about = document.querySelector('.about');
+    // about titles appear animation
+    var aboutTitle = document.querySelector('.about-title');
+    var subTitle = document.querySelector('.sub-title');
+
+    // my service section title animation
+    var msTitle = document.querySelector('.ms-title');
+    var msSubTitle = document.querySelector('.ms-sub-title');
+
+    //my service content items appear animation
+    var item1 = document.querySelector('.item1');
+    var item2 = document.querySelector('.item2');
+    var item3 = document.querySelector('.item3');
+
+
+    var dpImg = document.querySelector('.mydp');
+    var txtContent = document.querySelector('.text-content');
+
+    var about = document.querySelector('.about-main');
     var aboutPosition = about.getBoundingClientRect().top;
 
-    var screenPosition = window.innerHeight / 1.3 ;
-    console.log(screenPosition);
-    console.log(aboutPosition);
+    var myService = document.querySelector('.my-service-main');
+    var myServicetPosition = myService.getBoundingClientRect().top;
 
+    var screenPosition = window.innerHeight / 1.2 ;
+    
 
     if(aboutPosition < screenPosition){
         navBar.classList.add('nav-bar-change');
         logo.classList.add('logo-change');
 
+        aboutTitle.classList.add('about-title-appear');
+        subTitle.classList.add('sub-title-appear');
+
+
+        dpImg.classList.add('mydp-appear');
+        txtContent.classList.add('text-content-appear');
+
     }else{
         navBar.classList.remove('nav-bar-change');
         logo.classList.remove('logo-change');
+    }
+
+    if(myServicetPosition < screenPosition){
+
+        msTitle.classList.add('ms-title-appear');
+        msSubTitle.classList.add('ms-sub-title-appear');
+        item1.classList.add('item1-appear');
+        item2.classList.add('item2-appear');
+        item3.classList.add('item3-appear');
 
 
     }
 }
 window.addEventListener('scroll',scrollAppear);
+

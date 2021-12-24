@@ -106,9 +106,10 @@ a {
   font-weight: bold;
   font-style: italic;
 }
-/* ------------------------------------------about section */
+/* ------------------------------------------about section -------------------------------*/
+/* navbar animation */
 .about-main {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 .nav-bar-change {
@@ -116,4 +117,204 @@ a {
 }
 .logo-change {
   color: black;
+}
+/* about content */
+.about-title {
+  width: 100%;
+  font-size: 65px;
+  text-align: center;
+  padding-top: 45px;
+  transition: 0.7s all ease-in-out;
+  transform: translateY(50px);
+  opacity: 0;
+}
+.sub-title {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  transform: translateY(50px);
+  transition: 1s all ease-in-out 0.3s;
+  opacity: 0;
+}
+.line {
+  width: 20%;
+  height: 0.2px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: rgb(255, 175, 0);
+}
+.about-title-appear,
+.sub-title-appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+/* about content */
+.about-main-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.mydp {
+  height: 450px;
+  width: 350px;
+  object-fit: cover;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: 1.3s all ease-in-out 1s;
+}
+.img-content {
+  padding: auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.text-content {
+  width: 60%;
+  height: fit-content;
+  transform: translateX(50px);
+  opacity: 0;
+  transition: 1.3s all ease-in-out 1s;
+}
+h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 21px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  width: 80%;
+}
+.cv-bttn a {
+  background-color: rgb(255, 175, 0);
+  padding: 15px;
+  font-size: 20px;
+}
+.mydp-appear {
+  transform: scale(1);
+  opacity: 1;
+}
+.text-content-appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+/* ------------------------ */
+
+.my-service-main {
+  height: 90vh;
+  background-color: rgb(41, 41, 41);
+}
+.ms-title {
+  width: 100%;
+  font-size: 65px;
+  text-align: center;
+  padding-top: 45px;
+  color: white;
+  transition: 0.7s all ease-in-out;
+  transform: translateY(50px);
+  opacity: 0;
+}
+.ms-title-appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ms-sub-title {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: rgb(41, 41, 41);
+  transform: translateY(50px);
+  transition: 1s all ease-in-out 0.3s;
+  opacity: 0;
+}
+.ms-sub-title-appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.ms-text {
+  background-color: rgb(41, 41, 41);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 8px;
+  padding-right: 8px;
+  color: rgb(255, 175, 0);
+}
+.ms-line {
+  background-color: rgb(255, 255, 255);
+  width: 20%;
+  height: 0.2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* ms-content */
+.ms-content {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.item1,
+.item2,
+.item3 {
+  height: 50vh;
+  width: 25%;
+  background-color: rgb(68, 68, 68);
+  position: relative;
+  opacity: 0;
+  transform: scale(0.7);
+}
+.item1 {
+  transition: 1.3s all ease-in-out 1s;
+}
+.item2 {
+  transition: 1.3s all ease-in-out 2s;
+}
+.item3 {
+  transition: 1.3s all ease-in-out 3s;
+}
+.icon-div {
+  font-size: 75px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -20%);
+  padding-bottom: 100px;
+  color: rgb(255, 175, 0);
+  font-weight: bolder;
+}
+.item-txt {
+  position: absolute;
+  top: 75%;
+  transform: translateY(-75%);
+  text-align: center;
+  padding: 45px;
+  font-size: 17px;
+  line-height: 22px;
+  color: white;
+}
+.item1-appear,
+.item2-appear,
+.item3-appear {
+  opacity: 1;
+  transform: scale(1);
 }
