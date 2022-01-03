@@ -210,7 +210,7 @@ p {
   opacity: 1;
   transform: translateX(0px);
 }
-/* ------------------------ */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
 
 .my-service-main {
   height: 90vh;
@@ -317,4 +317,178 @@ p {
 .item3-appear {
   opacity: 1;
   transform: scale(1);
+}
+/* ---------------------------------------my skills section */
+.my-skills-main {
+  height: 90vh;
+}
+.sk-title {
+  width: 100%;
+  font-size: 65px;
+  text-align: center;
+  padding-top: 45px;
+  transition: 0.7s all ease-in-out;
+  transform: translateY(50px);
+  color: black;
+  opacity: 0;
+}
+.sk-title-appear {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.sk-sub-title {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  transform: translateY(50px);
+  transition: 1s all ease-in-out 0.3s;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+}
+.sk-sub-title-appear {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.sk-text {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 8px;
+  padding-right: 8px;
+  color: rgb(255, 175, 0);
+}
+.sk-line {
+  background-color: rgb(0, 0, 0);
+  width: 20%;
+  height: 0.2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.sk-content {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills-text {
+  height: 80%;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 1.3s all ease-in-out 1s;
+}
+.skills-text-appear {
+  opacity: 1;
+  transform: scale(1);
+}
+.vertical-line {
+  width: 1px;
+  background-color: black;
+  height: 80%;
+}
+.skills-bars {
+  height: 80%;
+  width: 50%;
+}
+.h3-p-div {
+  text-align: left;
+  width: 65%;
+  font-size: 17px;
+  line-height: 25px;
+}
+/* -------------------skills bars */
+.main {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  margin-left: 25px;
+}
+.skills-bars {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.skill-container {
+  width: 70%;
+}
+.name {
+  position: absolute;
+}
+.value {
+  position: absolute;
+  right: 0px;
+}
+
+.full-bar {
+  height: 8px;
+  width: 100%;
+  background-color: rgb(219, 219, 219);
+  position: absolute;
+  top: 50%;
+  border-radius: 5px;
+}
+.value-bar {
+  height: 7px;
+  background-color: rgb(255, 175, 0);
+  top: 50%;
+  position: absolute;
+  border-radius: 5px;
+  animation-delay: 3s;
+}
+.Html {
+  width: 60%;
+}
+.css {
+  width: 85%;
+}
+.js {
+  width: 45%;
+}
+.sql {
+  width: 90%;
+}
+
+@keyframes value_bar_html {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes value_bar_css {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes value_bar_js {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes value_bar_sql {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
 }
